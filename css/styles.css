@@ -466,3 +466,18 @@ button[type="submit"] {
     }
 }
 
+.titulo-con-icono {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-con-icono .icono {
+    margin-right: 0.5rem;
+    stroke: #2c3e50; 
+    min-width: 24px;  
+    min-height: 24px;
+}
+
+
