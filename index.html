@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <header>
         <h1 class="titulo">ISC. Diego Enrique Gómez Valdez</h1>
     </header>
@@ -40,7 +43,7 @@
 
                 <P>Aguascalientes, Ags.</P>
             </div>
-            <a class="boton" href="#">Contactar</a>
+            <a class="boton" href="#Formulario">Contactar</a>
         </div>
 
 
@@ -63,7 +66,9 @@
                         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
                     </svg>
                 </div>
-                <p>Diseño sitios web modernos, funcionales y adaptables a dispositivos móviles, enfocados en la experiencia del usuario. Utilizo tecnologías como HTML, CSS, Tailwind CSS y Figma para crear interfaces limpias y profesionales.</p>
+                <p>Diseño sitios web modernos, funcionales y adaptables a dispositivos móviles, enfocados en la
+                    experiencia del usuario. Utilizo tecnologías como HTML, CSS, Tailwind CSS y Figma para crear
+                    interfaces limpias y profesionales.</p>
             </section>
 
             <section class="servicio">
@@ -82,7 +87,9 @@
                         <line x1="15" y1="18" x2="15" y2="21" />
                     </svg>
                 </div>
-                <p>Desarrollo aplicaciones web completas usando tecnologías como Next.js, Express, MongoDB y WebSockets. Me enfoco en crear soluciones eficientes, escalables y fáciles de mantener para resolver necesidades reales de usuarios y empresas.</p>
+                <p>Desarrollo aplicaciones web completas usando tecnologías como Next.js, Express, MongoDB y WebSockets.
+                    Me enfoco en crear soluciones eficientes, escalables y fáciles de mantener para resolver necesidades
+                    reales de usuarios y empresas.</p>
             </section>
 
             <section class="servicio">
@@ -98,12 +105,14 @@
                         <path d="M6 5l1.5 7h10.5l1.5 -7h-13z" />
                     </svg>
                 </div>
-                <p>He desarrollado tiendas en línea con funcionalidades como catálogos dinámicos, carritos de compras, sistemas de pago y chat en tiempo real. Implemento PWA para mejorar la experiencia del usuario y permitir navegación sin conexión.</p>
+                <p>He desarrollado tiendas en línea con funcionalidades como catálogos dinámicos, carritos de compras,
+                    sistemas de pago y chat en tiempo real. Implemento PWA para mejorar la experiencia del usuario y
+                    permitir navegación sin conexión.</p>
             </section>
         </div>
     </main>
 
-    <section>
+    <section id="Formulario">
         <h2>Contacto</h2>
         <form class="formulario">
             <fieldset>
@@ -159,6 +168,15 @@
         function cerrarModal() {
             document.getElementById('modalContacto').classList.add('oculto');
         }
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        });
     </script>
 </body>
 
