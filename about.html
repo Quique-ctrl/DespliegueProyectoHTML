@@ -11,33 +11,54 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <main class="contenedor sombra tarjeta-sobre-mi">
         <div class="contenedor volver">
             <a href="index.html" class="boton regresar">&larr; Regresar</a>
         </div>
         <section class="header-sobre-mi">
             <img src="img/Yo.png" alt="Diego Enrique Gómez Valdez" class="foto-perfil" />
-            <h1 class="nombre">Diego Enrique Gómez  Valdez</h1>
+            <h1 class="nombre">Diego Enrique Gómez Valdez</h1>
         </section>
 
         <div class="info-grid">
             <div class="columna">
                 <h2>Estudios</h2>
-                <p>Actualmente curso la carrera de Ingeniería en Sistemas Computacionales en la Universidad Politécnica de Aguascalientes. A lo largo de mi formación, he adquirido conocimientos sólidos en programación, bases de datos, redes, y desarrollo de software utilizando metodologías ágiles.</p>
+                <p>Actualmente curso la carrera de Ingeniería en Sistemas Computacionales en la Universidad Politécnica
+                    de Aguascalientes. A lo largo de mi formación, he adquirido conocimientos sólidos en programación,
+                    bases de datos, redes, y desarrollo de software utilizando metodologías ágiles.</p>
 
                 <h2>Proyectos</h2>
-                <p>He desarrollado múltiples proyectos académicos y personales, incluyendo un sistema de e-commerce con PWA, un sistema de gestión de usuarios y productos, así como una plataforma de chat en tiempo real utilizando WebSockets. También he trabajado con tecnologías como Next.js, Express, MongoDB y Tailwind CSS.</p>
+                <p>He desarrollado múltiples proyectos académicos y personales, incluyendo un sistema de e-commerce con
+                    PWA, un sistema de gestión de usuarios y productos, así como una plataforma de chat en tiempo real
+                    utilizando WebSockets. También he trabajado con tecnologías como Next.js, Express, MongoDB y
+                    Tailwind CSS.</p>
             </div>
 
             <div class="columna">
                 <h2>Experiencia Laboral</h2>
-                <p>Actualmente estoy en proceso de adquirir experiencia profesional a través de proyectos universitarios y prácticas profesionales. Me he desempeñado como desarrollador fullstack en proyectos escolares que simulan entornos reales de trabajo, aplicando buenas prácticas de desarrollo.</p>
+                <p>Actualmente estoy en proceso de adquirir experiencia profesional a través de proyectos universitarios
+                    y prácticas profesionales. Me he desempeñado como desarrollador fullstack en proyectos escolares que
+                    simulan entornos reales de trabajo, aplicando buenas prácticas de desarrollo.</p>
                 <h2>Otro</h2>
-                <p>Soy una persona autodidacta y entusiasta de la tecnología. Me apasionan los desafíos relacionados con el desarrollo web y móvil, y constantemente estoy aprendiendo nuevas herramientas. Me encantan los patos, los perros y los cuyos. También estoy explorando el mundo del streaming y la creación de contenido en Twitch.</p>
+                <p>Soy una persona autodidacta y entusiasta de la tecnología. Me apasionan los desafíos relacionados con
+                    el desarrollo web y móvil, y constantemente estoy aprendiendo nuevas herramientas. Me encantan los
+                    patos, los perros y los cuyos. También estoy explorando el mundo del streaming y la creación de
+                    contenido en Twitch.</p>
             </div>
         </div>
     </main>
-
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
